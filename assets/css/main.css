@@ -1,3 +1,142 @@
-td{
+/* td{
     border: solid 1px;
+} */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #d500f9;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    background: #642B73;
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+    background: linear-gradient(to right, #C6426E, #642B73);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    /* box-shadow: diferencia Horizontal diferencia Vertical desenfoque amplitud color */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.26);
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #642B73;
+    display: inline-block;
+    font-weight: 300;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.26);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.description{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.title-card{
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #C6426E;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.address{
+    font-weight: bold;
+    color: #642B73;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+.position{
+    background-color: #C6426E;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    /* border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em; */
+}
+
+@media (max-width:600px){
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #642B73;
+    }
+    th{
+        display: none;
+    }
+    
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
 }
